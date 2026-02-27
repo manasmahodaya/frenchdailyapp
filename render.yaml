@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: frenchsprint-api
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node backend/server.mjs
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: ALLOWED_ORIGIN
+        value: "*"
+      - key: RAZORPAY_ME_LINK
+        value: "https://razorpay.me/manasmahodaya"
+      - key: SUPPORT_WHATSAPP
+        value: "919971133672"

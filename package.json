@@ -1,0 +1,23 @@
+{
+  "name": "daily-french",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "server": "node backend/server.mjs",
+    "start:prod": "node backend/server.mjs",
+    "start:prod:win": "powershell -ExecutionPolicy Bypass -File .\\start-production.ps1",
+    "dev": "vite",
+    "build": "vite build",
+    "build:prod": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "vite": "^5.0.0"
+  }
+}
